@@ -163,7 +163,10 @@ Click the **Create Project** tab:
 
 	<img alt=" " title=" " src="images/fec-001-create.png">
 
-	<div class="caption"></div>
+	<div class="caption">
+		
+		
+	</div>
 
 </div>
 
@@ -179,8 +182,14 @@ Download it here:
 The next screen in Refine is a preview of the data. There's not much to do here as Refine is pretty good at knowing whatever you gave it by default. Click **Create Project** in the top right to continue.
 
 <div class="imgwrap">
+	
 	<img alt=" " title=" " src="images/fec-002-preview.png">
-	<div class="caption"></div>
+	
+	<div class="caption">
+		
+		
+	</div>
+
 </div>
 
 
@@ -215,7 +224,13 @@ Let's start with the **state**, or as the FEC calls it, **ITEM-ST**:
 
 <!--
 <div class="imgwrap">
+	
 	<img alt=" " title=" " src="images/">
-	<div class="caption"></div>
+	
+	<div class="caption">
+	
+	</div>
+	
+	
 </div>
 -->
