@@ -160,8 +160,11 @@ Open the Google Refine application, which will either automatically open up a ne
 Click the **Create Project** tab:
 
 <div class="imgwrap">
+
 	<img alt=" " title=" " src="images/fec-001-create.png">
+
 	<div class="caption"></div>
+
 </div>
 
 
@@ -191,11 +194,18 @@ To **sort** a column, simply click on the **down-arrow** by the column you want.
 Let's start with the **state**, or as the FEC calls it, **ITEM-ST**:
 
 <div class="imgwrap">
+
 	<img alt=" " title=" " src="images/fec-010-sort.png">
+
 	<div class="caption"></div>
+
 </div>
 
 
+
+<br>
+
+*(this is part of a rolling update...check back for more steps/info)*
 
 
 # The White House Visitor Logs
