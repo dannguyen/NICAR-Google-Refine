@@ -424,9 +424,18 @@ We'll focus on these fields for now:
 
 In the FEC example, we saw how Refine deals with tedious data cleaning. Thankfully, the more important fields of the White House visitor data are relatively clean.
 
-So now the problem is: what do we want to find? Or, what is even there? You may already have in mind names of people who you **think** are interesting, either visitors (such as prominent lobbyists) or visitees (Obama, his chief of staff, etc.). But what happens if those names aren't there...?
+So now the problem is: what do we want to find? Or, what is even there? If you, like me, have never been to the White House or have never taken part in any of the D.C. rituals, you may have no idea how or what these visits are like:
 
-Rather than limit your inquiry to some obvious queries, Refine allows you to quickly view the big picture and the context. Sometimes what's not there is worth a story in itself.
+* How often does any single person get to visit the White House?
+* How long do they stay?
+* What are the occasions in which people show up as pairs, or in groups of 50 - 100 (which we won't cover as I've filtered those out in the set)
+* Do well-known lobbyists really just sign in like any other visitor, hoping that partisans won't take notice?
+
+
+
+You may already have in mind names of people who you **think** are interesting, either visitors (such as prominent lobbyists) or visitees (Obama, his chief of staff, etc.). But what happens if those names aren't there...? Rather than limit your inquiry to some obvious queries, Refine allows you to quickly view the big picture and the context. Sometimes what's not there is worth a story in itself.
+
+
 
 
 ## First steps
@@ -453,7 +462,7 @@ We're creating two columns that each are based on two other columns (first and l
 ### The visitor\_fullname column
 To create the visitor\_fullname column, add a new column and name it **visitor\_fullname**
 
-And then use this as the Expression:
+And then use this as the **Expression**:
 
 <pre>
 toUppercase(cells['NAMELAST'].value + ', ' + cells['NAMEFIRST'].value)
@@ -471,7 +480,7 @@ toUppercase(cells['NAMELAST'].value + ', ' + cells['NAMEFIRST'].value)
 </div>
 
 
-Note that we can't just use the **term** value as we did when we were just deriving from a single column. We're adding the last and first name together with a comma in between. And then uppercasing it. Not as pretty as the CONCATENATE function, but that's because Expression allows for some extremely powerful programming that we won't get to right now.
+Note that we can't just use the term **value** as we did when we were just deriving from a single column. We're adding the last and first name together with a comma in between. And then uppercasing it. Not as pretty as the CONCATENATE function, but that's because Expression allows for some extremely powerful programming that we won't get to right now.
 
 
 ### The visitee\_fullname column
@@ -480,6 +489,49 @@ The same process as above, with this Expression:
 toUppercase(cells['visitee_namefirst'].value + ', ' + cells['visitee_namelast'].value)
 </pre>
 
+
+
+### Facet by Visitee
+
+Should we start with examining visitors or visitees? Your choice, but since the universe of White House officials is much smaller than the number of people who could visit, you'll at least see more names that you're familiar with.
+
+
+Do a **Text Facet** on the **visitee\_fullname** column:
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/wh-300-facet-visitees.png">
+	
+	<div class="caption">
+See any familiar names? Are there names that you would've thought to see?
+	</div>
+		
+</div>
+
+
+...
+
+
+### Combining Facets and Filters
+
+Notice that the President doesn't seem to be near the top of the list? Let's try adding a **Text Filter** to the **visitee\_fullname** again. This will help narrow it down. Let's try searching for "POTUS":
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/wh-333-potus-visits.png">
+	
+	<div class="caption">
+	Doesn't look like the President gets to entertain many guests one-on-one.
+	</div>
+		
+</div>
+
+If you go back to the full 2 million record dataset, you'll see that Pres. Obama (and his wife) get plenty of visits; any time a big honor ceremony is held, big groups of people are listed as visiting Pres. Obama. He just doesn't get many small group visits. Which must make the ~50 people &ndash; i.e. **the visitors** &ndash; who are listed as having some small-group time pretty important/interesting.
+
+
+### Network diagrams, quick and easy
+
+...
 
 
 **in progress**
@@ -526,8 +578,13 @@ Here's an example of what your screen should look like. Make sure you're adding 
 
 
 
-### Background material
- 
+## Background material
+
+I'm not breaking new ground here, but I am showing you how to quickly find some interesting angles. If you're interested in finding out more about White House elbow-rubbing, here are some pretty good reads:
+
+[Center for Public Integrity: White House visitor logs leave out many](http://www.politico.com/news/stories/0411/53072.html "White House visitor logs leave out many - Viveca Novak and Fred Schulte - Center for Public Integrity - POLITICO.com")
+
+ [NYT: Across From White House, Coffee With Lobbyists](http://www.nytimes.com/2010/06/25/us/politics/25caribou.html "Across From White House, Coffee With Lobbyists - NYTimes.com")
 <!--
 <div class="imgwrap">
 	
@@ -536,7 +593,6 @@ Here's an example of what your screen should look like. Make sure you're adding 
 	<div class="caption">
 	
 	</div>
-	
-	
+		
 </div>
 -->
