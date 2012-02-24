@@ -137,7 +137,10 @@ The two datasets I will be working with are:
 
 
 
-## The FEC Data
+
+
+
+# The FEC Data
 
 *This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session*
 
@@ -187,19 +190,14 @@ To **sort** a column, simply click on the **down-arrow** by the column you want.
 Let's start with the **state**, or as the FEC calls it, **ITEM-ST**:
 
 <div class="imgwrap">
-<img alt="Obama in 3D" title="Obama in 3D" src="images/3d-obama.jpg">
-
-	<img alt="A screenshot of Refine" title="A screenshot of Refine" src="images/grefine-wh-visitors.png">
-
-	<div class="caption">Let's find out who's been going to the <a href="http://www.whitehouse.gov/briefing-room/disclosures/visitor-records" title="Visitor Access Records | The White House">White House the past few years</a>...</div>
+	<img alt=" " title=" " src="images/fec-010-sort.png">
+	<div class="caption"></div>
 </div>
 
 
 
 
-fec-010-sort.png
-
-## The White House Visitor Logs
+# The White House Visitor Logs
 *This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session*
 
 ### Background material
