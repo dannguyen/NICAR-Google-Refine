@@ -14,6 +14,15 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 	.container{
 
 	}
+	
+	div.imgwrap{
+		width: 100%;
+	}
+	
+	div.imgwrap img{
+		margin: auto auto;
+		border: thin solid #777;
+	}
   
     a img {
       border: 0;
@@ -72,9 +81,9 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 
 An introduction to one of the best data tools for any reporter of **any** technical level
 
-
-![A screenshot of Refine](images/grefine-wh-visitors.png "A screenshot of Refine")
-
+<div class="imgwrap">
+	<img alt="A screenshot of Refine" title="A screenshot of Refine" src="images/grefine-wh-visitors.png">
+</div>
 
 This is a hands-on walkthrough for [NICAR 2012](http://www.ire.org/conferences/nicar-2012/). It will take place on **Friday**, from **2 &ndash; 2:50PM** in the **Jeffersonian/Knickerbocker** room. It will be led by Dan Nguyen ([@dancow](http://twitter.com/dancow)) with help from Joe Kokenge ([@josephkokenge](http://twitter.com/josephkokenge)) of ProPublica.
  
