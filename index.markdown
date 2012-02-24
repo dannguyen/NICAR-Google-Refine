@@ -263,7 +263,7 @@ OK, you should not be too impressed yet. We've only accomplished what you could 
 *This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session*
 
 ### Background material
-
+ 
 <!--
 <div class="imgwrap">
 	
