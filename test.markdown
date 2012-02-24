@@ -7,11 +7,12 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
       font-size: 14px;
       line-height: 22px;
       font-family: Helvetica Neue, Helvetica, Arial;
+		width: 940px;
+		margin: auto auto;
     }
 
 	.container{
-		width: 940px;
-		margin: auto auto;
+
 	}
   
     a img {
@@ -67,10 +68,6 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 </head>
 
 
-
-<div class="container">
-
-
 # Google Refine for Investigative Journalism
 
 *An introduction to one of the best data tools for any reporter of **any** technical level*
@@ -108,6 +105,3 @@ The two datasets I will be working with are:
 
 ## The White House Visitor Logs
 ** This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session**
-
-
-</div>
