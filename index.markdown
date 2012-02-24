@@ -183,10 +183,10 @@ Click the **Create Project** tab:
 
 This will prompt you to point your browser to a data-file. As you can see, it supports a variety of formats, including CSV and Excel spreadsheets.
 
-The [data-file](https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/fec/itcont-2012-MONY.txt.zip?raw=true) that I've prepared for this hands-on session has been re-formatted to be **tab-delimited** and I've pre-filtered it to **include only Missouri and New York donors in 2012**.
+The [data-file](http://bit.ly/nicar12-refine-fec) that I've prepared for this hands-on session has been re-formatted to be **tab-delimited** and I've pre-filtered it to **include only Missouri and New York donors in 2012**.
 
 Download it here:
-[https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/fec/itcont-2012-MONY.txt.zip?raw=true](https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/fec/itcont-2012-MONY.txt.zip?raw=true)
+[http://bit.ly/nicar12-refine-fec](http://bit.ly/nicar12-refine-fec)
 
 
 The next screen in Refine is a preview of the data. There's not much to do here as Refine is pretty good at knowing whatever you gave it by default. Click **Create Project** in the top right to continue.
@@ -410,9 +410,9 @@ The Obama administration recently announced with pride that [it has released mor
 
 These records purportedly shed light on the people who get access to the President and his inner circle. But how useful is that raw data? And what can it tell us about the nature of the visits? Or about the state of the White House's recordkeeping?
 
-Because the dataset is massive, I've narrowed it down to visits that involved just groups of one or two people. This removes the gigantic groups of tourists that also are named in the records. This may eliminate some notable names who show up in groups of 3 or a dozen, but we still have about 150,000 records to work with here:
+Because the dataset is massive, I've [narrowed it down to visits](http://bit.ly/nicar12-refine-wh "") that involved just groups of one or two people. This removes the gigantic groups of tourists that also are named in the records. This may eliminate some notable names who show up in groups of 3 or a dozen, but we still have about 150,000 records to work with here:
 
-[https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/wh-visitors/wh-visitors-less-than-3.csv.zip?raw=true](https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/wh-visitors/wh-visitors-less-than-3.csv.zip?raw=true)
+[http://bit.ly/nicar12-refine-wh](http://bit.ly/nicar12-refine-wh)
 
 We'll focus on these fields for now:
 
@@ -479,6 +479,44 @@ The same process as above, with this Expression:
 <pre>
 toUppercase(cells['visitee_namefirst'].value + ', ' + cells['visitee_namelast'].value)
 </pre>
+
+
+
+**in progress**
+
+### Creating "facet count" columns
+(time permitting!)
+
+OK, we're going to 2 more columns that are based off of the **full\_name columns** These columns will simply contain the value of the frequency counts per each unique name. So, if "EMMANUEL, RAHM" appears 100 times, his "facet count" column will have a value of **100** for each of his records.
+
+This is kind of a redundant step but if you have millions of records and faceting and clustering is causing your browser to meltdown, this can help you focus only on values that appear frequently.
+
+Again, click on the full_name column and go to the  **Add Column** action. The respective expressions are:
+
+<pre>
+facetCount(value, 'value', 'visitor_fullname')
+</pre>
+
+And :
+
+<pre>
+facetCount(value, 'value', 'visitee_fullname')
+</pre>
+
+Here's an example of what your screen should look like. Make sure you're adding based off of the correct column:
+
+
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/wh-222-add-facet-column.png">
+	
+	<div class="caption">
+	Creating a column with number of appearances
+	</div>
+	
+	
+</div>
 
 
 
