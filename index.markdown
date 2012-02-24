@@ -292,8 +292,10 @@ The sidebar should now look like this:
 	
 </div>
 
-A recap of what we just did: 
 
+
+**A recap of what we just did: 
+**
 * We did a **Text Facet** on the ITEM-ST (state) column
 * We clicked on the MO (Missouri) facet **to filter the dataset to 15K rows**
 * We did a **Text Facet** on the ITEM-CTY (city) column
@@ -303,10 +305,94 @@ So what the ITEM-CTY sidebar box shows is all the unique city names found in the
 
 If we wanted to find out all Chesterfield donors contributed, we'd have to find all the variations in that spelling before we could total their amounts.
 
-Refine gave us quite a mess to clean up. Luckily, cleaning is what Refine does best.
 
+(That faceted list of cities is sorted alphabetically. If you want to see which "city" value showed up the most frequently, just **sort by count**.)
+
+Refine gave us quite a mess to clean up. It's kind of amazing that this kind of problem, repeated a hundred or thousands of times over, can make a simple inquiry be a week-long project (if you don't quite before hand)
+
+Luckily, cleaning this up is what Refine does best.
+
+
+## Cleaning with Clusters ##
+
+Let's start with the basic routine of cleaning, which will fix up the Chesterfield issue above.
+
+
+### Duplicate your column
+The **first thing** you should do before you clean any column is to **duplicate that column**.
+
+For our example, this means clicking on the **ITEM-CTY** column header and going to **Edit column**->**Add column based on this column**.
+
+In the somewhat intimidating pop-up box, start by filling in a name for the new column. I chose "**city-clean**". 
+
+Next, you'll see that there's this big textbox for an **Expression**, which Refine has set to the value of...well...**value**
+
+This term, **value**, means that the new column will have the _value_ of the column that you had clicked on.
+
+If you're **not a programmer**, there's no time right now to explain that; if you are a programmer, you can guess that **value** is just the variable Refine is using to represent the corresponding value.
+
+For now, change **value** to:
+
+<pre>
+toUppercase(value)
+</pre>
+ 
+Here's what the pop-up box should look like:
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/fec-030-dupe-column.png">
+	
+	<div class="caption">
+Creating the city-clean column	
+	</div>
+	
+	
+</div>
+
+
+If you hit OK, you'll see that we've created a new column called **city-clean** and that it contains the uppercased version of the **ITEM-CTY** values.
+
+### A note about Undo and data integrity
+
+One of the best features that Refine has is the **Undo** option. If, for example, you wanted to delete that new column we just created, you just click on Undo. This applies to any other crazy operation you do on Refine.
+
+But we are duplicating the city column for now just so that you can compare the original value with the cleaned one. It's just good practice.
+
+### A note about subsets
+
+Remember that *before* we created that new column, we **first faceted by the state of MO** and then we clicked to filter the total result set so that only Missourians were shown.
+
+This means that the new column we've created, city-clean, only has values for that subset of Missourians. 
+
+If you want to do everyone in our total set, you have to first unclick the **MO** facet and then do the Add Column operation. If you already created the column before doing so, you can use the Edit Cells->Transform action to do pretty much the same thing...it just won't create a brand new column. 
+
+
+### Facet the city-clean column
+
+OK, make sure that you have your dataset filtered to just MO donors, but NOT to just a particular city.
+
+Do a **Text Facet** again, but this time on **city-clean**. Now check out the Facet sidebar (you may have to scroll it down, or resize the already active facet boxes by clicking and dragging):
+
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/fec-031-facet-clean-col.png">
+	
+	<div class="caption">
+	Faceting by city-clean column
+	</div>
+	
+</div>
+
+Look at that, instead of two different values for "Saint Louis", we just have one &ndash; "SAINT LOUIS". You'll also see that instead of **877** choices, the list of unique values has been reduced to **600**.
+
+And we haven't even started cleaning yet.
 
 ...
+
+
+
 
 <br>
 
