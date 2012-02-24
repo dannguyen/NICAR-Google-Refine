@@ -393,7 +393,7 @@ And we haven't even started cleaning yet.
 
 ### Clustering
  
-I'll fill this out more, but you can pretty much get the [complete scoop at my previous tutorial that uses the Dollars for Docs data](http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning "Chapter 1. Using Google Refine to Clean Messy Data - ProPublica").
+I didn't have to get time to write out this very important section before the actual session. I'll fill this out more, but you can pretty much get the [complete scoop at my previous tutorial that uses the Dollars for Docs data](http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning "Chapter 1. Using Google Refine to Clean Messy Data - ProPublica").
 
 
 
@@ -586,6 +586,8 @@ I'm not breaking new ground here, but I am showing you how to quickly find some 
 [Center for Public Integrity: White House visitor logs leave out many](http://www.politico.com/news/stories/0411/53072.html "White House visitor logs leave out many - Viveca Novak and Fred Schulte - Center for Public Integrity - POLITICO.com")
 
  [NYT: Across From White House, Coffee With Lobbyists](http://www.nytimes.com/2010/06/25/us/politics/25caribou.html "Across From White House, Coffee With Lobbyists - NYTimes.com")
+
+
 <!--
 <div class="imgwrap">
 	
