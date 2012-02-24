@@ -403,7 +403,78 @@ I'll fill this out more, but you can pretty much get the [complete scoop at my p
 
 
 # The White House Visitor Logs
+
 *This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session*
+
+The Obama administration recently announced with pride that [it has released more than 2 million records of White House visits](http://www.whitehouse.gov/briefing-room/disclosures/visitor-records "Visitor Access Records | The White House") since it began disclosing them in 2009. It is the first administration to do so on such a scale, so give them credit for that.
+
+These records purportedly shed light on the people who get access to the President and his inner circle. But how useful is that raw data? And what can it tell us about the nature of the visits? Or about the state of the White House's recordkeeping?
+
+Because the dataset is massive, I've narrowed it down to visits that involved just groups of one or two people. This removes the gigantic groups of tourists that also are named in the records. This may eliminate some notable names who show up in groups of 3 or a dozen, but we still have about 150,000 records to work with here:
+
+[https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/wh-visitors/wh-visitors-less-than-3.csv.zip?raw=true](https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/wh-visitors/wh-visitors-less-than-3.csv.zip?raw=true)
+
+We'll focus on these fields for now:
+
+* The name of the visitor 
+* The name of the White House official to be visited
+
+
+### Using Refine to navigate
+
+In the FEC example, we saw how Refine deals with tedious data cleaning. Thankfully, the more important fields of the White House visitor data are relatively clean.
+
+So now the problem is: what do we want to find? Or, what is even there? You may already have in mind names of people who you **think** are interesting, either visitors (such as prominent lobbyists) or visitees (Obama, his chief of staff, etc.). But what happens if those names aren't there...?
+
+Rather than limit your inquiry to some obvious queries, Refine allows you to quickly view the big picture and the context. Sometimes what's not there is worth a story in itself.
+
+
+## First steps
+
+I'm going to assume you're familiar with the Refine process. Create the project and load the data in.
+
+The two data fields we'll focus first on are:
+
+* The name of the visitor (NAMELAST and NAMEFIRST)
+* The name of the visitee (visitee\_namefirst and visitee\_namelast)
+
+So let's create two additional columns, **visitee\_fullname** and **visitor\_fullname**. These will serve as our "clean columns" to work with.
+
+This part is going to involve the **Edit column**->**Add column based on this column** operation
+
+
+### Creating a column from derived values
+
+**Warning:** This next part is going to involve some programming jargon. I'm not going to explain it, just copy and paste the values for now. If you're a non-programmer and are thinking "Whoa, I didn't sign up for this"...well, you won't have to learn programming yet. And even if you did, the good news is that the syntax we use here is very common across all other languages, so at least you aren't dealing with something only useful in Google Refine's universe.
+
+We're creating two columns that each are based on two other columns (first and last names). If you've used Excel before, you're familiar with the CONCATENATE equation. The following is the same thing:
+
+
+### The visitor\_fullname column
+To create the visitor\_fullname column, add a new column and name it **visitor\_fullname**
+
+And then use this as the Expression:
+
+<pre>
+toUppercase(cells['NAMELAST'].value + ', ' + cells['NAMEFIRST'].value)
+</pre>
+
+Note that we can't just use the **term** value as we did when we were just deriving from a single column. We're adding the last and first name together with a comma in between. And then uppercasing it.
+
+
+### The visitee\_fullname column
+The same process as above, with this Expression:
+<pre>
+toUppercase(cells['visitee_namefirst'].value + ', ' + cells['visitee_namelast'].value)
+</pre>
+
+
+
+
+
+
+
+
 
 ### Background material
  
