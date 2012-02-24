@@ -87,7 +87,7 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 
 This is a hands-on walkthrough for [NICAR 2012](http://www.ire.org/conferences/nicar-2012/). It will take place on **Friday**, from **2 &ndash; 2:50PM** in the **Jeffersonian/Knickerbocker** room. It will be led by Dan Nguyen ([@dancow](http://twitter.com/dancow)) with help from Joe Kokenge ([@josephkokenge](http://twitter.com/josephkokenge)) of ProPublica.
 
-You'll learn some of the basic (yet very powerful) features and we'll even do some examples of interesting journalism. No statistics, programming, or Excel skill required.
+You'll learn some of the basic (yet very powerful) features and we'll even do some examples of interesting journalism. No statistics, programming, or Excel skill required. Watch the [official video tutorials here](http://code.google.com/p/google-refine/). Read [my tutorial I wrote showing how Refine was essential](http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning "Chapter 1. Using Google Refine to Clean Messy Data - ProPublica") in our award-winning [Dollars for Docs investigation](http://projects.propublica.org/docdollars/) at ProPublica.
 
  
 
@@ -127,6 +127,9 @@ The two datasets I will be working with are:
 * Dan Nguyen ([@dancow](http://twitter.com/dancow))
 * Joseph Kokenge ([@josephkokenge](http://twitter.com/josephkokenge))
 
+
+
+
 ## The FEC Data
 
 **This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session**
@@ -134,3 +137,5 @@ The two datasets I will be working with are:
 
 ## The White House Visitor Logs
 **This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session**
+
+### Background material
