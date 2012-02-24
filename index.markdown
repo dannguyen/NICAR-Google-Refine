@@ -6,7 +6,7 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
     body {
       font-size: 14px;
       line-height: 22px;
-      font-family: Helvetica Neue, Helvetica, Arial;
+      font-family: "Helvetica Neue", Helvetica, Arial;
 		width: 900px;
 		margin: auto auto;
 		background: #eee;
@@ -82,19 +82,24 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 
 # Google Refine for Investigative Journalism
 
-An introduction to one of the best data tools for any reporter of **any** technical level
+*An introduction to one of the best data tools for any reporter of any technical level*
+
+
+This is a hands-on walkthrough for [NICAR 2012](http://www.ire.org/conferences/nicar-2012/). It will take place on **Friday**, from **2 &ndash; 2:50PM** in the **Jeffersonian/Knickerbocker** room. It will be led by Dan Nguyen ([@dancow](http://twitter.com/dancow)) with help from Joe Kokenge ([@josephkokenge](http://twitter.com/josephkokenge)) of ProPublica.
+ 
 
 <div class="imgwrap">
 	<img alt="A screenshot of Refine" title="A screenshot of Refine" src="images/grefine-wh-visitors.png">
 </div>
 
-This is a hands-on walkthrough for [NICAR 2012](http://www.ire.org/conferences/nicar-2012/). It will take place on **Friday**, from **2 &ndash; 2:50PM** in the **Jeffersonian/Knickerbocker** room. It will be led by Dan Nguyen ([@dancow](http://twitter.com/dancow)) with help from Joe Kokenge ([@josephkokenge](http://twitter.com/josephkokenge)) of ProPublica.
- 
 
 ## A tool for cleaning and investigations
-You may have heard how [Google Refine](http://code.google.com/p/google-refine/) &ndash; a "power tool for working with messy data" &ndash; is a great data cleaning tool. But if you haven't tried it out yet, then you're missing out on the potential stories and insights that Refine can easily (and sometimes exclusively) find in data.
 
-It doesn't matter what skill level you have. Refine is one of those unique tools that is as equally useful to those who have never left their click-and-drag interfaces into command-line world as it is to the most anal-retentive detail-oriented data analysts and power-programmers.
+[Google Refine](http://code.google.com/p/google-refine/) is called: "a power tool for working with messy data" 
+
+If you haven't tried Refine yet, then you're missing out on the potential stories and insights that Refine can easily (and sometimes exclusively) find in data. 
+
+It doesn't matter what skill level you have. Refine, which works right out of your browser (and offline) is one of those unique tools that is as equally useful to those who have never left their click-and-drag interfaces as it is to the most anal-retentive detail-oriented data analysts and command-line-loving power programmers.
 
 In this lesson, I'll start at the very basics: opening a file with Refine, doing basic sorting, searching (things that you can do in Excel, of course) to its easy-to-use data cleaning methods and then to how Refine can help you probe unfamiliar datasets to scout out a story.
 
