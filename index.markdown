@@ -19,7 +19,8 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 	div.imgwrap{
 		width: 100%;
 		text-align: center;
-		margin-bottom: 2.0em;
+		margin-bottom: 3.0em;
+		margin-top: 1.0em;
 	}
 	
 	div.imgwrap img{
@@ -33,6 +34,15 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
     h1, h2, h3, h4, h5, h6 {
       padding-top: 20px;
     }
+
+	h1{
+		margin-top: 3em;
+	}
+	
+	h2{ margin-top: 2em;}
+	
+	h3{margin-top: 1em;}
+	
       h2 {
         font-size: 22px;
       }
@@ -206,7 +216,10 @@ Let's start with the **state**, or as the FEC calls it, **ITEM-ST**:
 
 	<img alt=" " title=" " src="images/fec-010-sort.png">
 
-	<div class="caption"></div>
+	<div class="caption">
+		
+		
+	</div>
 
 </div>
 
