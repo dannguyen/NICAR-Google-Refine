@@ -208,7 +208,7 @@ The next screen in Refine is a preview of the data. There's not much to do here 
 
 To get familiar with how spreadsheet/Google-doc'ish Refine is, let's start with concepts you probably already know: **sorting** a spreadsheet by a column and **filtering** by value.
 
-To **sort** a column, simply click on the **down-arrow** by the column you want. 
+To **sort** a column, simply click on the **down-arrow** by the column you want to sort. This will bring up a  pop-up box asking if you want to treat it as a number or text (this is useful if you have some mixed-data field). You can just choose **Text** for now.
 
 Let's start with the **state**, or as the FEC calls it, **ITEM-ST**:
 
@@ -217,13 +217,42 @@ Let's start with the **state**, or as the FEC calls it, **ITEM-ST**:
 	<img alt=" " title=" " src="images/fec-010-sort.png">
 
 	<div class="caption">
-		
-		
+		Sorting by state
 	</div>
 
 </div>
 
 
+As you can see, one flaw &ndash; or rather, a design decision &ndash; of Refine is that it's not too easy to scroll through a bunch of records at once. At most, you'll only see 50 on a page.
+
+It'll become clear later why this is not a problem. For now, let's try to **filter** the **ITEM-ST** column so that we can at least see the residents from New York, or NY.
+
+Click the drop-down arrow on the **ITEM-ST** column header and choose **Text Filter**.
+
+This will pop-up a menu on the left sidebar where you can type in some text. 
+
+So type in **NY**
+
+
+<div class="imgwrap">
+
+	<img alt=" " title=" " src="images/fec-011-filter.png">
+
+	<div class="caption">
+		Filtering to find NY
+	</div>
+
+</div>
+
+
+You'll notice that all the visible entries now are from the state of **NY**. A more visible change is the **total number of matching rows**, which is **64,745** of the **79,740** rows total in our dataset (New Yorkers like to contribute more than Missourians, apparently).
+
+OK, you should not be too impressed yet. We've only accomplished what you could do easier in Excel. The next section will show more of Refine's power and ease of use.
+
+
+## Clustering, a better way to filter ##
+
+...
 
 <br>
 
