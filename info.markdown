@@ -1,7 +1,67 @@
 ---
 title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 ---
+<head>
+<style>
+    body {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: Helvetica Neue, Helvetica, Arial;
+    }
+  
+    a img {
+      border: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      padding-top: 20px;
+    }
+      h2 {
+        font-size: 22px;
+      }
+    b.header {
+      font-size: 18px;
+      line-height: 35px;
+    }
+    span.alias {
+      font-size: 14px;
+      font-style: italic;
+      margin-left: 20px;
+    }
+    table {
+      margin: 15px 0 0; padding: 0;
+    }
+      tr, td {
+        margin: 0; padding: 0;
+      }
+        td {
+          padding: 0px 15px 5px 0;
+        }
+    code, pre, tt {
+      font-family: Monaco, Consolas, "Lucida Console", monospace;
+      font-size: 12px;
+      line-height: 18px;
+      font-style: normal;
+    }
+      tt {
+        padding: 0px 3px;
+        background: #fff;
+        border: 1px solid #ddd;
+        zoom: 1;
+      }
+      code {
+        margin-left: 20px;
+      }
+      pre {
+        font-size: 12px;
+        padding: 2px 0 2px 15px;
+        border: 4px solid #bbb; border-top: 0; border-bottom: 0;
+        margin: 0px 0 25px;
+      }
+    
+  </style>
 
+
+</head>
 
 # Google Refine for Investigative Journalism
 
