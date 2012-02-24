@@ -92,7 +92,13 @@ You'll learn some of the basic (yet very powerful) features and we'll even do so
  
 
 <div class="imgwrap">
+
+
+<img alt="Obama in 3D" title="Obama in 3D" src="images/3d-obama.jpg">
+
 	<img alt="A screenshot of Refine" title="A screenshot of Refine" src="images/grefine-wh-visitors.png">
+
+	<div class="caption">Let's find out who's been going to the <a href="http://www.whitehouse.gov/briefing-room/disclosures/visitor-records" title="Visitor Access Records | The White House">White House the past few years</a>...</div>
 </div>
 
 
