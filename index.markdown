@@ -435,7 +435,8 @@ So now the problem is: what do we want to find? Or, what is even there? If you, 
 
 You may already have in mind names of people who you **think** are interesting, either visitors (such as prominent lobbyists) or visitees (Obama, his chief of staff, etc.). But what happens if those names aren't there...? Rather than limit your inquiry to some obvious queries, Refine allows you to quickly view the big picture and the context. Sometimes what's not there is worth a story in itself.
 
-
+(Since I won't be able to finish writing my notes/thoughts before my session today, you can get a good fix of what you're in for in this story published last year by the Center for Public Integrity: ["White House visitor logs leave out many
+"](http://www.politico.com/news/stories/0411/53072.html "White House visitor logs leave out many - Viveca Novak and Fred Schulte - Center for Public Integrity - POLITICO.com"))
 
 
 ## First steps
