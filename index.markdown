@@ -7,8 +7,9 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
       font-size: 14px;
       line-height: 22px;
       font-family: Helvetica Neue, Helvetica, Arial;
-		width: 940px;
+		width: 900px;
 		margin: auto auto;
+		background: #eee;
     }
 
 	.container{
@@ -17,6 +18,8 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 	
 	div.imgwrap{
 		width: 100%;
+		text-align: center;
+		margin-bottom: 2.0em;
 	}
 	
 	div.imgwrap img{
