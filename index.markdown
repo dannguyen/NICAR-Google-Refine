@@ -391,6 +391,9 @@ And we haven't even started cleaning yet.
 
 ...
 
+### Clustering
+ 
+I'll fill this out more, but you can pretty much get the [complete scoop at my previous tutorial that uses the Dollars for Docs data](http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning "Chapter 1. Using Google Refine to Clean Messy Data - ProPublica").
 
 
 
