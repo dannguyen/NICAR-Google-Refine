@@ -86,6 +86,9 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 
 
 This is a hands-on walkthrough for [NICAR 2012](http://www.ire.org/conferences/nicar-2012/). It will take place on **Friday**, from **2 &ndash; 2:50PM** in the **Jeffersonian/Knickerbocker** room. It will be led by Dan Nguyen ([@dancow](http://twitter.com/dancow)) with help from Joe Kokenge ([@josephkokenge](http://twitter.com/josephkokenge)) of ProPublica.
+
+You'll learn some of the basic (yet very powerful) features and we'll even do some examples of interesting journalism. No statistics, programming, or Excel skill required.
+
  
 
 <div class="imgwrap">
