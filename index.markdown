@@ -113,6 +113,15 @@ It doesn't matter what skill level you have. Refine, which works right out of yo
 In this lesson, I'll start at the very basics: opening a file with Refine, doing basic sorting, searching (things that you can do in Excel, of course) to its easy-to-use data cleaning methods and then to how Refine can help you probe unfamiliar datasets to scout out a story.
 
 
+### The Dilemma 
+There are, of course, about an unlimited number of ways that a dataset will do its best to raise your blood pressure. The two situations I'll cover are:
+
+* You pretty much know exactly what you're trying to find but you have no idea how messy/dirty the data is and if it's even cleanable
+
+* You don't even really know what's in the data or what you should be doing with it. You just want a really easy way to explore it.
+
+
+### The Data
 The two datasets I will be working with are:
 
 * [FEC Individual Contribution Data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#a2011_2012) &ndash; the list of citizens who have individually contributed $200+ to the political process
