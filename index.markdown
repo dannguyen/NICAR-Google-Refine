@@ -250,7 +250,61 @@ You'll notice that all the visible entries now are from the state of **NY**. A m
 OK, you should not be too impressed yet. We've only accomplished what you could do easier in Excel. The next section will show more of Refine's power and ease of use.
 
 
-## Clustering, a better way to filter ##
+## Faceting, a better way to filter ##
+
+One of Refine's best user-interface features is something called **faceting**: that is, collapsing and organizing a data-set by whatever criteria you want. At its most basic level, this works a lot like filtering.
+
+If the previous text-filter is still active, click the **"Remove All"** button.
+
+Next, click on the **ITEM-ST** column header again. But this time, choose the **Facet->Text Facet** option.
+
+Check out the left sidebar:
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/fec-020-facet-state.png">
+	
+	<div class="caption">
+	Faceting by state.
+	</div>
+	
+	
+</div>
+
+The text-faceting operation creates a little submenu in that sidebar. Clicking either NY or MO will auto-filter the dataset by those values. That's a little more handy than the **Text Filter** action we used.
+
+But we've just started.
+
+**Click on MO** so that only the ~15K Missourians are shown (check the **matching rows number**).
+
+Now that our dataset is filtered to the **MO facet**, do another **Facet->Text Facet** on the **ITEM-CTY** column. 
+
+The sidebar should now look like this:
+
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/fec-021-facet-state-city.png">
+	
+	<div class="caption">
+	Faceting by state AND city.
+	</div>
+	
+	
+</div>
+
+A recap of what we just did: 
+
+* We did a **Text Facet** on the ITEM-ST (state) column
+* We clicked on the MO (Missouri) facet **to filter the dataset to 15K rows**
+* We did a **Text Facet** on the ITEM-CTY (city) column
+ 
+
+So what the ITEM-CTY sidebar box shows is all the unique city names found in the state of Missouri that donors filled in. There are, for example, at least four different ways that the city of Chesterfield is represented: "Chesterfield", "Chesterfield," [note the extra comma], "CHESTERFIELD" and of course, 'chesterfield'.
+
+If we wanted to find out all Chesterfield donors contributed, we'd have to find all the variations in that spelling before we could total their amounts.
+
+Refine gave us quite a mess to clean up. Luckily, cleaning is what Refine does best.
+
 
 ...
 
