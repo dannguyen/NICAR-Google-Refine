@@ -164,6 +164,7 @@ Click the **Create Project** tab:
 	<div class="caption"></div>
 </div>
 
+
 This will prompt you to point your browser to a data-file. As you can see, it supports a variety of formats, including CSV and Excel spreadsheets.
 
 The [data-file](https://github.com/dannguyen/NICAR-Google-Refine/blob/master/data/fec/itcont-2012-MONY.txt.zip?raw=true) that I've prepared for this hands-on session has been re-formatted to be **tab-delimited** and I've pre-filtered it to **include only Missouri and New York donors in 2012**.
