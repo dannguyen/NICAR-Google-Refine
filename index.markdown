@@ -459,7 +459,19 @@ And then use this as the Expression:
 toUppercase(cells['NAMELAST'].value + ', ' + cells['NAMEFIRST'].value)
 </pre>
 
-Note that we can't just use the **term** value as we did when we were just deriving from a single column. We're adding the last and first name together with a comma in between. And then uppercasing it.
+<div class="imgwrap">
+	
+	<img alt=" " title=" " src="images/wh-111-add-column.png">
+	
+	<div class="caption">
+	Adding the "visitor\_fullname" column
+	</div>
+	
+	
+</div>
+
+
+Note that we can't just use the **term** value as we did when we were just deriving from a single column. We're adding the last and first name together with a comma in between. And then uppercasing it. Not as pretty as the CONCATENATE function, but that's because Expression allows for some extremely powerful programming that we won't get to right now.
 
 
 ### The visitee\_fullname column
