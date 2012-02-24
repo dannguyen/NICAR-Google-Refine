@@ -1,5 +1,3 @@
-
-
 ---
 title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 ---
