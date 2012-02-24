@@ -2,9 +2,6 @@
 title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 ---
 <head>
-	<title>Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)</title>
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 <style>
     body {
       font-size: 14px;
@@ -70,7 +67,7 @@ title: Google Refine for Investigative Journalism (NICAR 2012/Dan Nguyen)
 </head>
 
 
-<body>
+
 <div class="container">
 # Google Refine for Investigative Journalism
 
@@ -110,4 +107,3 @@ The two datasets I will be working with are:
 ## The White House Visitor Logs
 ** This tip sheet is a work-in-progress...I will be filling it out through today and it should be done by the time of my hands-on session**
 </div>
-</body>
